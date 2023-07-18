@@ -68,9 +68,17 @@ If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
 
 # Program:
-
-![image](https://github.com/Loknaath-P/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/139841683/6d2dccd3-1650-47a8-807f-64a6ded0b042)
-
+module LogicGates(a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+and (y1,a,b);
+or (y2,a,b);
+not (y3,a);
+xor (y4,a,b);
+nand (y5,a,b);
+nor (y6,a,b);
+xnor (y7,a,b);
+endmodule
 
 # RTL realization:
 
